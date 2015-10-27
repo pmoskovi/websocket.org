@@ -1,0 +1,23 @@
+# Site settings
+title: "websocket.org - Powered by Kaazing"
+email: peter.moskovits@kaazing.com
+description: "websocket.org - Powered by Kaazing"
+baseurl: ""
+url: https://websocket.org
+highlighter: pygments
+
+production: false
+# wordpress : true
+# asseturl: "/kwic-assets"
+asseturl: "/"
+
+# Build settings
+markdown: redcarpet
+highlighter: pygments
+# permalink: pretty
+#categories: [general]
+#relative_permalinks: false
+
+redcarpet:
+  extensions: ["fenced_code_blocks"]
+  input: "GFM"

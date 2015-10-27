@@ -1,0 +1,68 @@
+
+	<!-- BEGIN CONTACT
+	================================================== -->
+	<section id="contact" class="page-wrapper full-width light-bg" style="padding-bottom:0px;">
+
+		<div class="title-area">
+			<h2 class="title">Contact </h2>
+		</div><!-- /.title-area -->
+
+		<div class="page-fullwdth-content">
+
+			<div class="container">
+				<div class="row">
+					<div class="max80">
+						<div class="done">
+							<div class="alert alert-success">
+								<button type="button" class="close" data-dismiss="alert">×</button>
+								Your message has been sent. Thank you!
+							</div>
+						</div>
+						<form method="post" action="contact.php" id="contactform">
+							<div class="form">
+								<input class="col-md-6 norightr" type="text" name="name" placeholder="Your Name *">
+								<input class="col-md-6 noleftr" type="text" name="email" placeholder="Your E-mail Address *">
+								<textarea class="clearfix col-md-12" name="comment" rows="7" placeholder="Type your Message *"></textarea>
+								<input type="submit" id="submit" class="clearfix btn" value="Send">
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div><!-- /.container -->
+
+			<div class="wrapbeforemap">
+				<div class="mapinfo">
+					 East Tytherley Road, Lockerley, Romsey, Hampshire, SO51 0JT I / Phone 01794 340 979
+				</div>
+				<div class="mapinfoicon">
+					<i class="fa fa-tint"></i>
+				</div>
+			</div><!-- /.wrapbeforemap -->
+
+			<script src='js/map.js'></script>
+			<script type='text/javascript'>
+				// <![CDATA[
+				function initialize() {
+				var myLatlng = new google.maps.LatLng(42.3314,-83.0458);
+				var mapOptions = {
+				zoom: 15,
+				center: myLatlng
+				};
+				 var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+				 var marker = new google.maps.Marker({
+				position: myLatlng,
+				map: map,title: 'Detroit'
+				});
+				}
+				google.maps.event.addDomListener(window, 'load', initialize);
+				// ]]>
+			</script>
+
+			<div id='map-canvas' style='height:300px;'></div><!-- /#map-canvas -->
+
+		</div><!-- /.page-fullwdth-content -->
+
+	</section>
+	<!-- END CONTACT
+	================================================== -->
