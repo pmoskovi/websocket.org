@@ -30,7 +30,7 @@
 
     <div class="all item {% include utils/categoryToLanguage.html lang=page.language %} {% include utils/categoryToProtocol.html prot=page.protocol %}">
       <div class="pic">
-        <img src="{{page.url| remove:'index.html'}}img/{{page.images[0].filename }} " class="attachment-post-thumbnail" alt=""/>
+        <img src="{{site.baseurl}}{{page.url| remove:'index.html'}}img/{{page.images[0].filename }} " class="attachment-post-thumbnail" alt=""/>
         <div class="pic-caption come-left">
         <p class="portfo-captions">
           <a href="{{page.url}}"><i class="fa fa-plus link-caption"></i></a>
