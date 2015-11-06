@@ -2,7 +2,7 @@
 title: "websocket.org - Powered by Kaazing"
 email: peter.moskovits@kaazing.com
 description: "websocket.org - Powered by Kaazing"
-baseurl: ""
+baseurl: "/websocket.org"
 url: https://websocket.org
 highlighter: pygments
 
