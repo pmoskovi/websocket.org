@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1, user-scalable=no">  
+  
+<title>Tetris</title>
+
+<!-- Styles -->
+<link href="tetris.css" rel="stylesheet" type="text/css">
+
+<!-- Shapes and rotations -->
+<script src="script/templates.array.js" type="text/javascript"></script>
+  
+<!-- Kaazing Gateway -->
+<script src="script/gateway.js" type="text/javascript"></script>
+  
+<!-- QRCode for linking two devices uniquely -->
+<script src="script/qrcode.js" type="text/javascript"></script>  
+  
+<!-- Game logic -->
+<script src="script/tetris.js" type="text/javascript"></script>  
+  
+</head>
+<body>  
+ 
+<!-- Board -->
+<div class="board"></div>
+  
+<!-- QR code -->
+<div class="qr">
+	<div id="code"></div>
+	<div class="url"><a></a></div>
+	<div class="controller">(open game controller to start the game)</div>
+</div>
+  
+</body>
+</html>

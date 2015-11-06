@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+
+    {% include header.html %}
+		<!-- BEGIN CONTENT
+		================================================== -->
+		<section class="padtop60 padbot60">
+			<div class="container">
+
+				<!-- begin title -->
+				<div class="title-area">
+					<h2 class="title">{{page.title}}</h2>
+					<p class="subtitle orange">
+						{{page.summary}}
+					</p>
+				</div>
+
+				<p class="metadata">
+					{% if page.language %}
+					<strong>{% include utils/categoryToLanguage.html lang=page.language %}&nbsp;|&nbsp;</strong	>
+					{% endif %}
+
+					{% if page.protocol %}
+					<strong>{% include utils/categoryToProtocol.html prot=page.protocol %}</strong>
+					{% endif %}
+
+					{% if page.contributor %}
+					<strong>&nbsp;|&nbsp;{% include utils/categoryToAuthorType.html contrib=page.contributor %}</strong>
+					{% endif %}
+				</p>
+
+				{% if page.live-demo-url %}
+				<div class="wowanimslider space">
+					<a href="{{ page.live-demo-url }}" class="btn color wow" data-wow-delay="0.9s" data-wow-duration="1s"><i class="fa fa-download"></i> Run Demo</a>
+				</div>
+				{% endif %}
+
+				{% if page.github-repo-name %}
+				<div class="panel panel-default github-info s">
+					<div class="panel-body">
+						<div class="col-xs-12">
+							<img src="/img/GitHub-Mark-32px.png" width="32" height="32" class="github-image hidden-xs" alt="GitHub" />The source code for this demo is available on GitHub: <a href="http://github.com/{{ page.github-repo-user }}/{{ page.github-repo-name }}" target="_blank">{{ page.github-repo-user }}/{{ page.github-repo-name }}</a>
+						</div>
+					</div>
+				</div>
+				<div class="space">&nbsp;</div>
+				{% endif %}
+
+				<!-- end title -->
+
+
+				<div class="light-bg">
+					{{ content }}
+				</div>
+
+				<!-- begin row -->
+				<div class="row">
+
+					<!-- begin images -->
+					<div class="col-md-8 col-md-offset-2 text-">
+						<div class="wowcarouselanything owl-carousel">
+
+							{% for image in page.images %}
+							<div class="item wowshsclient text-center">
+								<div class="content">
+									<img src="img/{{ image.filename }}" alt="{{ image.comment }}">
+									{% if image.comment %}
+									<p>{{ image.comment }}</p>
+									{% endif %}
+								</div>
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+					<!-- end images -->
+
+					<div class="clearfix"></div>
+
+				</div>
+				<!-- end row -->
+
+			</div>
+		</section>
+
+    {% include footer.html %}
+
+	</body>
+</html>

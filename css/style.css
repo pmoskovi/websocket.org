@@ -1677,6 +1677,12 @@ a.porto-excerpt-caption {
 .page-wrapper {
 	padding:80px 60px 60px;
 }
+
+@media (max-width: 480px) {
+	.page-wrapper {
+		padding:80px 10px 60px;
+	}
+}
 .parallax {
 	overflow:hidden;
 	z-index:1;
@@ -1685,7 +1691,8 @@ a.porto-excerpt-caption {
 	background-position:50% 0;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
-	background-size:cover;
+	background-size: auto 1000px;
+
 }
 .overlay {
 	position:absolute;
@@ -2216,9 +2223,23 @@ body {
 	vertical-align: middle;
 }
 
+.helper {
+	display: inline-block;
+	height: 100%;
+	vertical-align: top;
+}
+
+.logo-container {
+    height: 70px;      /* equals max image height */
+    width: 260px;
+    white-space: nowrap;
+    text-align: center;
+}
+
 .header-logo {
-	width: 220px;
-	vertical-align: middle;
+    vertical-align: middle;
+    max-height: 40px;
+    max-width: 260px;
 }
 
 .navbar-logo-text {
@@ -2336,4 +2357,28 @@ figcaption {
 	-moz-box-shadow:none;
 	-webkit-box-shadow:none;
 	outline:1px;
+}
+
+.github-info {
+		padding: 10px;
+		background-color:#eee;
+		border-color: #ccc;
+		margin-bottom: 0;
+}
+
+.github-info a {
+	color:#f47d31;
+}
+
+.github-image {
+	margin-right: 20px;
+	vertical-align: middle;
+}
+
+.orange {
+	color:#f47d31;
+}
+
+.space {
+	padding-bottom: 40px;
 }

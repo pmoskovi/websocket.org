@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>iPhone WebSocket Connected</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="icon" href="/img/favicon.ico">
+  <link rel="stylesheet" href="../css/jquery.mobile-1.4.0.min.css" />
+  <script src="../scripts/jquery-2.0.3.min.js"></script>
+  <script src="../scripts/jquery.mobile-1.4.0.min.js"></script>
+  <script src="../scripts/jquery.ba-bbq.min.js"></script>
+  <script src="../scripts/lab_utils.js"></script>
+  <!-- URL parser for optional debugging -->
+  <script src="../scripts/URLParser.js"></script>
+  <!-- WebSocket for emulation and more... -->
+  <script src="http://cache.kaazing.net/bower/kaazing-websocket-client-javascript/5.0.0-50/WebSocket.js"></script>
+  <!-- AMQP -->
+  <script src="http://cache.kaazing.net/bower/kaazing-amqp-0-9-1-client-javascript/5.0.0-6/Amqp-0-9-1.js"></script>
+  <!-- Boilerplate connectivity -->
+  <script src="../scripts/boilerplate.js"></script>
+  <script src="../scripts/joystick2.js"></script>
+</head>
+<body>
+  <div data-role="page">
+    <div data-role="header" data-nobackbtn="true">
+      <h1 id="statusMsg">Connecting...</h1>
+    </div>
+    <div data-role="content" data-inset="true" data-theme="a">
+      <p>
+        Now tilt your phone and see stuff move in your game browser.
+      </p>
+      <div data-role="fieldcontain">
+        <label for="x">X:</label>
+        <input type="range" name="beta" id="beta" value="0" min="0" max="360" style="display:none;" />
+        <br />
+        <label for="y">Y:</label>
+        <input type="range" name="gamma" id="gamma" value="0" min="0" max="180" style="display:none;" />
+      </div>
+      <div data-role="footer">
+        <h4><span id="JMSmessages">0</span> Messages sent</h4>
+        <br />
+      </div>
+      <div data-role="fieldcontain">
+        <textarea id="log" cols="75" rows="12"></textarea>
+      </div>
+      <form action="connect.html" method="get">
+        <fieldset>
+          <div data-role="fieldcontain">
+            <input type="text" name="pin" id="pin" value=""  />
+            <input type="hidden" name="emulate" id="emulate" value=""  />
+          </div>
+          <input id="submit" type="submit" value="Connect to Other Game" data-role="button" data-inline="false" data-theme="a" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <script>
+    $(function() {
+      var query  = $.deparam.querystring();
+      pin = query.pin;
+      emulate = query.emulate;
+      $('#emulate').val(emulate);
+      $("#pin").text(pin);
+      init();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>HelloRacer&trade; WebGL</title>
+		<meta charset="utf-8">
+		<meta name="keywords" content="HelloEnjoy, Carlos Ulloa, carlosulloa.com, Papervision3D, PV3D, Papervision, 3D, Flash, Unity, Unity3D, WebGL, iOS, iPhone, iPad, iPod, interactive 3D, high-end, interactive, design, director" />
+		<meta name="description" content="High-End Interactive Car Simulation">
+		<link rel="image_src" href="images/HelloRacerWebGL.jpg" />
+		<link href="images/favicon.ico" rel="shortcut icon" />
+		<style type="text/css">
+			body {
+				background-color: #fff;
+				margin: 0px;
+				overflow: hidden;
+			}
+
+			#info {
+				position: absolute;
+				top: 0px; width: 100%;
+				color: #808080;
+				padding: 5px;
+				font-family: “helvetica neue”, helvetica, arial, sans-serif;
+				font-size: 13px;
+				text-align: center;
+			}
+
+			#conStatus {
+				position: absolute;
+				top: 0px; width: 100%;
+				color: #808080;
+				padding: 5px;
+				font-family: “helvetica neue”, helvetica, arial, sans-serif;
+				font-size: 13px;
+				text-align: right;
+				margin-right: 5px;
+			}
+
+			#info2 {
+				position: absolute;
+				bottom: 0px; width: 100%;
+				color: #808080;
+				padding: 5px;
+				font-family: “helvetica neue”, helvetica, arial, sans-serif;
+				font-size: 16px;
+				text-align: center;
+				font-weight: bold;
+			}
+
+			a {
+				color: #000;
+				text-decoration: none;
+			}
+
+			a:hover {
+				color: #ff1561;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="log"></div>
+		<div id="container"></div>
+
+		<div id="info">
+			<b>HelloRacer&trade; WebGL</b> — Created by <a href="http://helloenjoy.com" target="_blank">HelloEnjoy&trade;</a> — Powered by <a href="http://github.com/mrdoob/three.js" target="_blank">three.js</a>
+		</div>
+
+		<!-- <div id="conStatus">
+			Not Connected
+		</div> -->
+
+		<div id="info2">
+			Use WASD or cursor keys to drive, space for hand brake and enter to change camera.
+		</div>
+		<!-- URL parser for optional debugging -->
+		<script src="scripts/URLParser.js"></script>
+		<script src="scripts/Three.js"></script>
+		<script src="scripts/Detector.js"></script>
+		<script src="scripts/RequestAnimationFrame.js"></script>
+		<script src="scripts/Stats.js"></script>
+		<script src="scripts/lab_utils.js"></script>
+		<script src="scripts/HelloRacer.js"></script>
+		<!-- WebSocket for emulation and more... -->
+		<script src="http://cache.kaazing.net/bower/kaazing-websocket-client-javascript/5.0.0-50/WebSocket.js"></script>
+		<!-- AMQP -->
+		<script src="http://cache.kaazing.net/bower/kaazing-amqp-0-9-1-client-javascript/5.0.0-6/Amqp-0-9-1.js"></script>
+		<!-- Boilerplate connectivity -->
+		<script src="scripts/boilerplate.js"></script>
+	</body>
+</html>

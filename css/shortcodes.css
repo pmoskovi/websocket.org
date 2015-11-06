@@ -21,14 +21,14 @@
 	font-weight:300;
 	margin-top:15px;
 	display: block;
-}
+} 
 
 /*==============================================* SHORTCODE TWITTER*===============================================*/
 div.rotatingtweet {
 	text-align:center;margin-bottom:0px;
 }
 #content .rotatingtweets, #content .norotatingtweets {
-	
+
 	margin-bottom:0px;
 	border:0;
 	margin:0px auto !Important;
@@ -36,8 +36,8 @@ div.rotatingtweet {
 }
 .container>.rotatingtweets {text-align:center;}
 
-#content p.rtw_main, p.rtw_main, div.rtw_main {	
-	line-height: 1.3;	
+#content p.rtw_main, p.rtw_main, div.rtw_main {
+	line-height: 1.3;
 	font-size: 28px;
 	position: relative;
 	text-transform: uppercase;
@@ -55,8 +55,8 @@ p.rtw_meta, div.rtw_meta {
 }
 
 
-.twittericonsh {	
-	font-size: 110px; 
+.twittericonsh {
+	font-size: 110px;
 	padding-bottom: 10px;
 	text-align:center;
 	display: block !Important;
@@ -315,7 +315,7 @@ ul.social-icons li a:hover {
 	float:none;
 	margin:0 auto;
 	background:#333;
-	color:#fff;	
+	color:#fff;
 	border-radius:3px;
 	padding: 12px 22px 14px;
 }
@@ -352,7 +352,7 @@ margin-top: 10px;
 	-moz-transition:all 0.5s ease-in-out;
 	-o-transition:all 0.5s ease-in-out;
 	-ms-transition:all 0.5s ease-in-out;
-	transition:all 0.5s ease-in-out;	
+	transition:all 0.5s ease-in-out;
 	margin-top:10px;
 }
 .wow-toggle .wow-toggle-trigger:hover {
@@ -412,7 +412,7 @@ input[type="submit"].contactbutton {
 .mapinfo {background-color: #00cfef;letter-spacing: 1px; padding: 30px 20px; color: #fff; font-weight: 600;}
 .mapinfoicon {position: absolute;top: -30px;left: 50%;background-color: #fff;color: #444; height: 50px; width: 50px; border-radius: 50%; font-size: 30px;line-height: 50px;text-align: center; margin-left: -25px;}
 #map-canvas {
-	min-height: 200px;	
+	min-height: 200px;
 }
 /*==============================================* SHORTCODE LISTS*===============================================*/
 .unstyle ul,.unstyle ol,ul.unstyle,ol.unstyle {
@@ -857,7 +857,7 @@ ul.longarrowlist li:before {
 	border-bottom: 1px solid;
 	border-color: #00cfef;
 	background-color: #00cfef;
-	color: #fff;	
+	color: #fff;
 }
 /*==============================================* SHORTCODE Count to*===============================================*/
 .funfacts .icon {
@@ -989,7 +989,7 @@ ul.longarrowlist li:before {
 	border:1px solid #ddd;
 	background:#f6f6f6 url(../img/plus.png) no-repeat 15px center;
 	outline:0;
-	text-transform:none;	
+	text-transform:none;
 	font-size:inherit;
 	line-height:1.5em;
 	margin:-1px 0 0 !important;
@@ -1012,7 +1012,7 @@ ul.longarrowlist li:before {
 	border-bottom:0px;
 }
 .wow-accordion .wow-accordion-trigger.ui-state-active a {
-	
+
 }
 .wow-accordion .ui-accordion-content {
 	background-color:#fff;
@@ -1066,7 +1066,7 @@ ul.wskill {
 }
 .wskill i {
 	background-color:#00cfef;
-	color:#fff;	
+	color:#fff;
 	margin-left:-13px;
 	margin-right:10px;
 	width: 50px;
