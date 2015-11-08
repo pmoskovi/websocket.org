@@ -21,7 +21,7 @@
 	font-weight:300;
 	margin-top:15px;
 	display: block;
-} 
+}
 
 /*==============================================* SHORTCODE TWITTER*===============================================*/
 div.rotatingtweet {
@@ -265,7 +265,7 @@ ul.social-icons li a:hover {
 .wow-pricing-table .wow-pricing-header {
 	text-align:center;
 	padding:20px 0 10px 0;
-	background-color:#333;
+	background-color:#444;
 }
 .wow-pricing-table .wow-pricing-header h5 {
 	color:#fff;
@@ -278,12 +278,12 @@ ul.social-icons li a:hover {
 	font-size:1.500em;
 	line-height:1em;
 	padding-top:15px;
-	background:#333;
+	background:#444;
 }
 .wow-pricing-table .wow-pricing-per {
 	font-size:0.786em;
 	color:#fff;
-	background-color:#333;
+	background-color:#444;
 	padding-bottom:10px;
 }
 .wow-pricing-table .wow-pricing-content {
@@ -314,7 +314,7 @@ ul.social-icons li a:hover {
 .wow-pricing-table .wow-pricing-button .wow-button {
 	float:none;
 	margin:0 auto;
-	background:#333;
+	background:#444;
 	color:#fff;
 	border-radius:3px;
 	padding: 12px 22px 14px;
