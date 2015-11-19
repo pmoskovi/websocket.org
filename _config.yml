@@ -2,14 +2,13 @@
 title: "websocket.org - Powered by Kaazing"
 email: peter.moskovits@kaazing.com
 description: "websocket.org - Powered by Kaazing"
-baseurl: "/websocket.org"
-url: https://websocket.org
+baseurl: ""
+url: http://www.websocket.org
 highlighter: pygments
 
-production: false
+production: true
 # wordpress : true
-# asseturl: "/kwic-assets"
-asseturl: "/"
+asseturl: "/websocket.org"
 
 # Build settings
 markdown: redcarpet
